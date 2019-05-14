@@ -1,8 +1,116 @@
-* {box-sizing: border-box;}
+
+/* @font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/NanumGothic/NanumGothic-Regular.eot');
+  src: url('../fonts/NanumGothic/NanumGothic-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NanumGothic/NanumGothic-Regular.woff2') format('woff2'),
+       url('../fonts/NanumGothic/NanumGothic-Regular.woff') format('woff'),
+       url('../fonts/NanumGothic/NanumGothic-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/NanumGothic/NanumGothic-Bold.eot');
+  src: url('../fonts/NanumGothic/NanumGothic-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NanumGothic/NanumGothic-Bold.woff2') format('woff2'),
+       url('../fonts/NanumGothic/NanumGothic-Bold.woff') format('woff'),
+       url('../fonts/NanumGothic/NanumGothic-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/NanumGothic/NanumGothic-ExtraBold.eot');
+  src: url('../fonts/NanumGothic/NanumGothic-ExtraBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NanumGothic/NanumGothic-ExtraBold.woff2') format('woff2'),
+       url('../fonts/NanumGothic/NanumGothic-ExtraBold.woff') format('woff'),
+       url('../fonts/NanumGothic/NanumGothic-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Jalnan';
+  font-style: normal;
+  src: url('../fonts/Jalnan/Jalnan.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Goyang';
+  font-style: normal;
+  src: url('../fonts/Goyang/Goyang.ttf') format('truetype');
+}
+@font-face {
+  font-family: '116angduk_honesty1.5';
+  font-style: normal;
+  src: url('../fonts/116angduk_honesty1.5/116angduk_honesty1.5.ttf') format('truetype');
+} */
+@font-face {
+  font-family: 'Binggrae';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Binggrae/Binggrae-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Binggrae';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Binggrae/Binggrae-Bold.ttf') format('truetype');
+
+}
+/* @font-face {
+  font-family: 'BinggraeⅡ';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Binggrae/BinggraeⅡ-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BinggraeⅡ';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Binggrae/BinggraeⅡ-Bold.ttf') format('truetype');
+
+} */
+/* @font-face {
+  font-family: 'BinggraeTaom';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Binggrae/BinggraeTaom-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BinggraeTaom';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Binggrae/BinggraeTaom-Bold.ttf') format('truetype');
+
+} */
+/* @font-face {
+  font-family: 'dovemayo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/dovemayo/dovemayo-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'dovemayo';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/dovemayo/dovemayo-Bold.ttf') format('truetype');
+
+} */
+
+* {
+  box-sizing: border-box;
+  /* font-family:'Nanum Gothic'; */
+  /* font-family:'Jalnan'; */
+  /* font-family:'Goyang'; */
+  /* font-family:'116angduk_honesty1.5'; */
+  /* font-family:'BinggraeⅡ'; */
+  font-family:'Binggrae';
+  /* font-family:'BinggraeTaom'; */
+  /* font-family:'dovemayo'; */
+}
 
 body, h2, h3 {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 /************************ all css end *****************************************/
 .header-top {
@@ -120,7 +228,7 @@ body, h2, h3 {
 /* Create three equal columns that floats next to each other */
 .row{
   /* 메뉴바 내부 에서 왼쪽여백, 이미지로 채우거나 기타 가능 */
-  padding-left: 550px;
+  padding-left: 300px;
 }
 .column {
   float: left;

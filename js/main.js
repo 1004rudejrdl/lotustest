@@ -26,3 +26,10 @@ function headerResizingFunc() {
     }
   }
 }
+// $(document).ready(function(){
+//   $(".dropbtn").hover(function(){
+//     $("#navbar_img").width(250);//로고 크기
+//     }, function(){
+//       $("#navbar_img").width(650);//로고 크기
+//   });
+// });
