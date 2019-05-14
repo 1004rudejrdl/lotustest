@@ -17,6 +17,7 @@
 .main_body_center{
   max-width: 80%;
   margin: auto;
+  margin-bottom: 30px;
   padding: 10px;
 }
 .td_pic_pro{
@@ -25,11 +26,27 @@
 .main_body_product{
   max-width: 80%;
   margin: auto;
+  margin-bottom: 10%;
   padding: 10px;
 }
-/* .centerproduct{
-  display: inline-block;
-} */
+.main_body_product ul{
+  padding: 0px;
+  margin: 0;
+  list-style: none; /* Remove HTML bullets */
+}
+.main_body_product :first-child li{
+  background-color: #FF5675;
+  color: white;
+  font-weight: bold;
+}
+.centerproduct{ /*식당, 숙박, 렌트카, 쇼핑*/
+  display: block;
+  float: left;
+  width: 25%;
+  padding:2px;
+  text-align: center;
+  font-size: 30px;
+}
 .centerproductimg{ /*식당, 숙박, 렌트카, 쇼핑*/
   width: 100%;
 }
@@ -53,6 +70,7 @@
 .br_st_text{
   padding: 10px;
   width: 100%;
+  z-index: 1;
   /* border: 1px solid green; */
 }
 
@@ -141,19 +159,38 @@
 }
 
 /* The actual content */
+.content *{
+  padding:0;
+  margin: 0;
+}
 .content {
   padding: 20px 30px;
-  /* background-color: royalblue; */
   background-color: royalblue;
   position: relative;
   border-radius: 6px;
   color: white;
 }
-
+@media screen and (max-width: 1300px) {
+  .centerproduct{ /*식당, 숙박, 렌트카, 쇼핑*/
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1000px) {
+.content *{
+  font-size: 15px;
+}
+.content {
+  padding: 10px 15px;
+  background-color: royalblue;
+  position: relative;
+  border-radius: 6px;
+  color: white;
+}
+}
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 800px) {
-  .main_body{
-    height: 1300px;
+  .main_body_center,.main_body_product{
+    max-width: 100%;
   }
   /* Place the timelime to the left */
   .timeline::after {
@@ -174,7 +211,6 @@
   border-width: 10px 10px 10px 0;
   border-color: transparent royalblue transparent transparent;
   }
-
   /* Make sure all circles are at the same spot */
   .left::after, .right::after {
   left: 15px;
@@ -183,5 +219,10 @@
   /* Make all right containers behave like the left ones */
   .right {
   left: 0%;
+  }
+  .centerproduct{ /*식당, 숙박, 렌트카, 쇼핑*/
+    float: none;
+    width: 100%;
+    font-size: 22px;
   }
 }

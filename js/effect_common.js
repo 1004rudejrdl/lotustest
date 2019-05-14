@@ -2,7 +2,6 @@
 window.onscroll = function() {
   scrollFunction() //goto top button
 };
-
 //goto top button
 function scrollFunction() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {

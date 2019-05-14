@@ -6,7 +6,6 @@
   // include $_SERVER['DOCUMENT_ROOT']."/lotus/lib/create_table.php";
   // include $_SERVER['DOCUMENT_ROOT']."/lotus/lib/func_main.php";
   // include __DIR__."/../lib/create_table.php"; 자기 폴더 까지 찍으므로 상대경로의 문제점을 고치지는 못함
-
   // create_table($conn,'membership');//이력서 제출 테이블 생성
   // create_table($conn,'membership');//이력서 제출 테이블 생성
   // create_table($conn,'membership');//이력서 제출 테이블 생성
@@ -37,12 +36,12 @@
   <div class="header-top">
     <div id="navbar" class="topnav sticky">
       <!-- id for sticky -->
-      <div class="dropdown">
-        <button class="logo"><a href="./index.php"> <img src="./main_img/lotus_logo_text.png" alt="" style="width:250px;"></a></button>
+      <div class="dropdown logo_center">
+        <button class="logo"><a href="./index.php"> <img id="navbar_img" src="./main_img/lotus_logo_text_black.png" alt=""></a></button>
       </div>
       <div class="dropdown">
         <button class="dropbtn">
-          <a>ABOUT<i class="fa fa-caret-down"></i></a>
+          <a>ABOUT&nbsp;&nbsp;<i class="fa fa-caret-down"></i></a>
         </button>
         <div class="dropdown-content">
           <div class="header">
@@ -77,11 +76,11 @@
       </div> <!-- dropdown end -->
       <div class="dropdown">
         <button class="dropbtn">
-          <a>CUSTOMER SERVICE<i class="fa fa-caret-down"></i></a>
+          <a>CUSTOMER SERVICE&nbsp;&nbsp;<i class="fa fa-caret-down"></i></a>
         </button>
         <div class="dropdown-content">
           <div class="header">
-            <h2>CUSTOMER SERVICE&nbsp;&nbsp;&nbsp;&nbsp;서비스지원</h2>
+            <h2>CUSTOMER SERVICE</h2>
           </div> <!-- header -->
           <div class="row">
             <div class="column">
@@ -107,11 +106,11 @@
       </div> <!-- dropdown -->
       <div class="dropdown">
         <button class="dropbtn">
-          <a>RECRUIT<i class="fa fa-caret-down"></i></a>
+          <a>RECRUIT&nbsp;&nbsp;<i class="fa fa-caret-down"></i></a>
         </button>
         <div class="dropdown-content alignR">
           <div class="header">
-            <h2>RECRUIT&nbsp;&nbsp;&nbsp;&nbsp;인재채용</h2>
+            <h2>RECRUIT</h2>
           </div> <!-- header -->
           <div class="row">
             <div class="column">
@@ -140,11 +139,11 @@
           $url_board=(isset($_SESSION['userid']))?("./board_member/mem_free_bd/mem_free_bd_main.php"):("./board_guest/op_free_bd/op_free_bd_main.php");
         ?>
         <button class="dropbtn">
-          <a>BOARD<i class="fa fa-caret-down"></i></a>
+          <a>BOARD&nbsp;&nbsp;<i class="fa fa-caret-down"></i></a>
         </button>
         <div class="dropdown-content">
           <div class="header">
-            <h2>COMMUTE BOARD&nbsp;&nbsp;&nbsp;&nbsp;게시판</h2>
+            <h2>COMMUTE BOARD</h2>
           </div> <!-- header -->
           <div class="row">
             <div class="column">
@@ -161,9 +160,9 @@
           </div> <!-- row -->
         </div> <!-- dropdown-content -->
       </div> <!-- dropdown -->
-      <div class="dropdown dd_right">
-        <button class="logo"><a href="./index.php"> <img src="./main_img/lotus_logo_img2.png" alt="" style="width:200px;"></a></button>
-      </div>
+      <!-- <div class="dropdown dd_right">
+        <button class="logo"><a href="./index.php"> <img src="./main_img/lotus_logo_img2.png"></a></button>
+      </div> -->
       <div class="dropdown dd_right">
         <button class="dropbtn"><a href="./index.php">LOGIN</a></button>
       </div> <!-- dropdown -->
@@ -192,6 +191,7 @@
   <!-- common effect end-->
 
   <script src="./js/effect_common.js"></script><!-- Sticky event를 위해서 상단에 올리지 못함 -->
+  <script src="./js/main.js"></script><!-- Sticky event를 위해서 상단에 올리지 못함 -->
   <!-- header end -->
 
   <!-- main_body start -->
@@ -237,6 +237,20 @@
         <p>2012 회사연혁</p>
       </div>
     </div>
+    <div class="container left">
+      <div class="content">
+        <h2>2017</h2>
+        <p>2017 회사연혁</p>
+        <p>2017 회사연혁</p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h2>2016</h2>
+        <p>2016 회사연혁</p>
+        <p>2016 회사연혁</p>
+      </div>
+    </div>
   </div>
 </div>
         </td>
@@ -268,20 +282,26 @@
     </table>       <!-- 그림, 남프, 여프, 로그 -->
   </div>  <!-- main_body_center end -->
   <div class="main_body_product"> <!-- 식당, 숙박, 렌트카, 쇼핑 -->
-    <table>
+    <!-- <table>
       <tr>
         <td><img src="./main_img/img_header.png" class="centerproductimg"></td>
         <td><img src="./main_img/img_header.png" class="centerproductimg"></td>
         <td><img src="./main_img/img_header.png" class="centerproductimg"></td>
         <td><img src="./main_img/img_header.png" class="centerproductimg"></td>
       </tr>
-    </table>
-    <!-- <ul>
-      <li class="centerproduct"><img src="./main_img/img_header.png" class="centerproductimg"></li>
-      <li class="centerproduct"><img src="./main_img/img_header.png" class="centerproductimg"></li>
-      <li class="centerproduct"><img src="./main_img/img_header.png" class="centerproductimg"></li>
-      <li class="centerproduct"><img src="./main_img/img_header.png" class="centerproductimg"></li>
-    </ul> -->
+    </table> -->
+    <ul>
+      <li class="centerproduct">맛집</li>
+      <li class="centerproduct">숙박</li>
+      <li class="centerproduct">렌트카</li>
+      <li class="centerproduct">쇼핑</li>
+    </ul>
+    <ul>
+      <li class="centerproduct"><a href="#"><img src="./main_img/img_header.png" class="centerproductimg"></a></li>
+      <li class="centerproduct"><a href="#"><img src="./main_img/img_header.png" class="centerproductimg"></a></li>
+      <li class="centerproduct"><a href="#"><img src="./main_img/img_header.png" class="centerproductimg"></a></li>
+      <li class="centerproduct"><a href="#"><img src="./main_img/img_header.png" class="centerproductimg"></a></li>
+    </ul>
   </div> <!-- 식당, 숙박, 렌트카, 쇼핑 end -->
 
 </div>  <!-- main_body end -->
@@ -309,13 +329,13 @@
       </tr>
     </table> -->
     <ul>
-      <li class="footerlist2"><input type="image" src="./main_img/lotus_logo.png"></li>
+      <li class="footerlist2"><input type="image" src="./main_img/lotus_logo_text_black.png"></li>
       <li class="footerlist2">서울 강남구 강남대로 406 (역삼동 820-9 글라스타워) 11,12,16층(135-932) <br>
          상호명 : 듀오정보(주) / 대표자 : 박수경 / 결혼중개업 신고번호 : 강남 080031<br>
          등록번호 : 서울 080079 / 사업자등록번호 : 214-86-28824 통신판매업 신고 : 강남 - 3259호 사업자정보확인<br>
          무료상담전화 : 1577-8333 / Fax : 02-550-6003 / Email : duo@duonet.comCOPYRIGHT 1995~2019 <br>
          @DUOINFO CORP. ALL RIHGT RESERVED</td></li>
-      <li class="footerlist2">로고</li>
+      <li class="footerlist2"><input type="image" src="./main_img/lotus_logo_text_black.png"></li>
     </ul>
   </div> <!-- footer end -->
 </div>
